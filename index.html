@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Css -->
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+
+	<!-- Fontes -->
+	<link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+
+    <title>Calculadora</title>
+</head>
+
+<body class="">
+	<div>
+		<form action="" name="calc">
+			<div id="calculadora">			
+				<input type="text" id="visor" name="visor" onkeypress="return onlynumber();">
+				<div id="first">
+					<input type="button" value="7" class="botao borda" onclick="botao(value)">
+					<input type="button" value="8" class="botao borda" onclick="botao(value)">
+					<input type="button" value="9" class="botao borda" onclick="botao(value)">
+					<input type="button" value="/" class="botao borda" onclick="botao(value)">
+				</div>
+				<div id="second">
+					<input type="button" value="4" class="botao borda" onclick="botao(value)">
+					<input type="button" value="5" class="botao borda" onclick="botao(value)">
+					<input type="button" value="6" class="botao borda" onclick="botao(value)">
+					<input type="button" value="*" class="botao borda" onclick="botao(value)">
+				</div>
+				<div id="tree">
+					<input type="button" value="1" class="botao borda" onclick="botao(value)">
+					<input type="button" value="2" class="botao borda" onclick="botao(value)">
+					<input type="button" value="3" class="botao borda" onclick="botao(value)">
+					<input type="button" value="-" class="botao borda" onclick="botao(value)">
+				</div>
+				<div id="four">
+					<input type="button" value="C" class="botao borda" onclick="reset()">
+					<input type="button" value="0" class="botao borda" onclick="botao(value)">
+					<input type="button" value="=" class="botao borda" onclick="calcula()">
+					<input type="button" value="+" class="botao borda" onclick="botao(value)">
+				</div>
+
+			</div>
+		</form>
+	</div>				
+	<!-- JavaScript -->
+    <script language="JavaScript" src="js/calc.js"></script>
+</body>
+</html>
